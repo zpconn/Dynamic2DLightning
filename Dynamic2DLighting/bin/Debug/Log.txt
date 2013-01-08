@@ -1,0 +1,20 @@
+﻿
+/// Session started at: 7/6/2006 9:37:07 PM
+/// Dynamic 2D Lighting Demo v1.0.0.0
+
+[21:37:07] Unable to read setting DesiredWidth and cast it to type System.Int32
+
+/// Session started at: 7/6/2006 9:38:28 PM
+/// Dynamic 2D Lighting Demo v1.0.0.0
+
+[21:38:28] Unable to read setting DesiredWidth and cast it to type System.Int32
+
+/// Session started at: 7/6/2006 9:39:15 PM
+/// Dynamic 2D Lighting Demo v1.0.0.0
+
+[21:39:15] Unable to read setting DesiredWidth and cast it to type System.Int32
+
+/// Session started at: 7/6/2006 9:42:08 PM
+/// Dynamic 2D Lighting Demo v1.0.0.0
+
+[21:42:08] Unable to read setting WindowTitle and cast it to type System.String

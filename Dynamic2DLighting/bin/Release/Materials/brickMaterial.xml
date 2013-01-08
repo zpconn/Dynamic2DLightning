@@ -1,0 +1,6 @@
+<Material>
+	<DiffuseMap>Textures\\coloredBrickDiffuseMap.jpg</DiffuseMap>
+	<NormalMap>Textures\\brickNormalMap.jpg</NormalMap>
+	<HeightMap>Textures\\brickNormalMap_DISPLACEMENT.bmp</HeightMap>
+	<Shininess>0</Shininess>
+</Material>

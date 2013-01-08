@@ -1,0 +1,5 @@
+<Material>
+	<DiffuseMap>Textures\\coloredBrickDiffuseMap.jpg</DiffuseMap>
+	<NormalMap>Textures\\roughWallNormalMap.png</NormalMap>
+	<Shininess>60</Shininess>
+</Material>

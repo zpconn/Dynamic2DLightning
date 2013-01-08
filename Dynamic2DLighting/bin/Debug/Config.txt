@@ -1,0 +1,8 @@
+DesiredWidth: 1024
+DesiredHeight: 768
+FallbackFontFamily: Arial
+LogFilename: Log.txt
+WindowTitle: Dynamic 2D Lighting Demo | By Zach Conn
+DefaultTextureExtension: dds
+TexturesDirectory: Textures
+Windowed: True

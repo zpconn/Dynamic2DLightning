@@ -1,0 +1,4 @@
+<Material>
+	<DiffuseMap>Textures\\MT_Architecture_Ground_01_Diffuse_01.tga</DiffuseMap>
+	<NormalMap>Textures\\MT_Architecture_Ground_01_Normal_01.tga</NormalMap>
+</Material>

@@ -1,0 +1,5 @@
+<Material>
+	<DiffuseMap>Textures\\Stones.bmp</DiffuseMap>
+	<NormalMap>Textures\\stones_NM_height.tga</NormalMap>
+	<Shininess>60</Shininess>
+</Material>

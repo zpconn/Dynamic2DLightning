@@ -1,0 +1,121 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C3F8D2B-75D0-40B7-9983-BCAEFAFFB332}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dynamic2DLighting</RootNamespace>
+    <AssemblyName>Dynamic2DLighting</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2911.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="nunit.framework, Version=2.2.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BloomPostProcessor.cs" />
+    <Compile Include="ConvexHull.cs" />
+    <Compile Include="Dynamic2DLightingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dynamic2DLightingForm.Designer.cs">
+      <DependentUpon>Dynamic2DLightingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphics\D3DEnum.cs" />
+    <Compile Include="Graphics\Effect.cs" />
+    <Compile Include="Graphics\Font.cs">
+    </Compile>
+    <Compile Include="Graphics\GraphicsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphics\IGraphicsResource.cs" />
+    <Compile Include="Graphics\IRenderable.cs" />
+    <Compile Include="Graphics\Material.cs">
+    </Compile>
+    <Compile Include="Graphics\Mesh.cs">
+    </Compile>
+    <Compile Include="Graphics\Renderer.cs" />
+    <Compile Include="Graphics\RenderPacket.cs" />
+    <Compile Include="Graphics\ResourceCache.cs" />
+    <Compile Include="Graphics\SceneGraph.cs" />
+    <Compile Include="Graphics\SceneGraphNode.cs" />
+    <Compile Include="Graphics\Texture.cs" />
+    <Compile Include="Graphics\GeometryNode.cs" />
+    <Compile Include="Helpers\Config.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Helpers\HighResTimer.cs">
+    </Compile>
+    <Compile Include="Helpers\Log.cs" />
+    <Compile Include="Helpers\NativeMethods.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Input\MouseDevice.cs">
+    </Compile>
+    <Compile Include="Graphics\Light.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Graphics\GraphicsForm.resx">
+      <DependentUpon>GraphicsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
